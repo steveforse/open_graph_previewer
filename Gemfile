@@ -28,7 +28,6 @@ gem "httpparty"
 gem "ostruct"
 
 group :development, :test do
-  gem "annotate"
   gem "debug"
   gem "brakeman", require: false
   gem "factory_bot_rails"
