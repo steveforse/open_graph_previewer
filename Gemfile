@@ -19,6 +19,7 @@ gem "thruster", require: false
 gem "bootsnap", require: false
 
 gem "active_interaction"
+gem "strong_migrations"
 
 # Open Graph processing
 gem "ogp"
@@ -30,7 +31,7 @@ group :development, :test do
   gem "brakeman", require: false
   gem "rubocop-rspec", require: false
   gem "rubocop-rails-omakase", require: false
-  gem "rspec-rails", require: false
+  gem "rspec-rails"
   gem "factory_bot_rails"
   gem "rubocop", require: false
 end
