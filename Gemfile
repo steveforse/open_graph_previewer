@@ -19,6 +19,7 @@ gem "thruster", require: false
 gem "bootsnap", require: false
 
 gem "active_interaction"
+gem "amazing_print"
 gem "strong_migrations"
 
 # Open Graph processing
@@ -27,17 +28,24 @@ gem "httpparty"
 gem "ostruct"
 
 group :development, :test do
+  gem "annotate"
   gem "debug"
   gem "brakeman", require: false
-  gem "rubocop-rspec", require: false
-  gem "rubocop-rails-omakase", require: false
-  gem "rspec-rails"
   gem "factory_bot_rails"
+  gem "faker"
   gem "rubocop", require: false
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "rubocop-rails-omakase", require: false
+  gem "rubocop-rspec", require: false
+  gem "rspec-rails"
+  gem "standard", ">= 1.47.0"
 end
 
 group :development do
   gem "web-console"
+  gem "shoulda-matchers"
+  gem "webmock"
 end
 
 group :test do
