@@ -6,12 +6,19 @@ import OpenGraphCard from './OpenGraphCard';
 const OpenGraphPreviewer = () => {
   const [ogData, setOgData] = useState(null);
 
+  // Function to get CSRF token from meta tag
+  const getCSRFToken = () => {
+    const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+    return csrfToken || '';
+  };
+
   const fetchOpenGraphData = async (url) => {
     try {
       const response = await fetch('/api/fetch_open_graph', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-CSRF-Token': getCSRFToken(),
         },
         body: JSON.stringify({ url }),
       });
