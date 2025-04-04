@@ -8,6 +8,7 @@ class Url < ApplicationRecord
 
   def fetch
     refresh! unless success?
+    self
   end
 
   def refresh!

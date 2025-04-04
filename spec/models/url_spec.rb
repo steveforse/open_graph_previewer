@@ -42,6 +42,8 @@ RSpec.describe Url, type: :model do
         expect(url).not_to have_received(:refresh!)
       end
     end
+
+    it { is_expected.to be_a described_class }
   end
 
   describe '#refresh!' do
