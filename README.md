@@ -121,7 +121,7 @@ bundle exec rspec
 - Batch URL processing
 - Store images locally?
 
-## Stuff that's not release-rady
+## Stuff that's not release-ready
 - More error handling
 - Needs react tests
 - Needs integration tests
