@@ -120,3 +120,10 @@ bundle exec rspec
 - Support for user accounts
 - Batch URL processing
 - Store images locally?
+
+## Stuff that's not release-rady
+- More error handling
+- Needs react tests
+- Needs integration tests
+- Not really happy with the URL list component. Needs better functionality.
+- Should've put API routes in a separate file. At least one has an API namespace.
