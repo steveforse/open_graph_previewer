@@ -16,6 +16,6 @@ FactoryBot.define do
         "image" => "https://opengraphexamples.com/og.jpg"
       }
     end
-    most_recent_error { nil }
+    error_reason { nil }
   end
 end
