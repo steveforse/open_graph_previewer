@@ -1,5 +1,5 @@
 class UrlsController < ApplicationController
-  skip_before_action :verify_authenticity_token, only: [:fetch_open_graph]
+  skip_before_action :verify_authenticity_token, only: [ :fetch_open_graph ]
 
   def index
     @urls = Url.all

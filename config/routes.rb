@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "urls#index"
-  
+
   # API endpoints
   post "/api/fetch_open_graph", to: "urls#fetch_open_graph"
 end
