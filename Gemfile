@@ -27,6 +27,9 @@ gem "ogp"
 gem "httpparty"
 gem "ostruct"
 
+# JSON serialization
+gem "active_model_serializers", "~> 0.10.13"
+
 group :development, :test do
   gem "debug"
   gem "brakeman", require: false
