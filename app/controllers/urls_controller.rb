@@ -2,7 +2,12 @@ class UrlsController < ApplicationController
   protect_from_forgery with: :exception
 
   def index
-    @urls = Url.all
+    @urls = Url.all.order(created_at: :desc)
+
+    respond_to do |format|
+      format.json { render json: @urls }
+      format.html { render :index }
+    end
   end
 
   def fetch_open_graph
